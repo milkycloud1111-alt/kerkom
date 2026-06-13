@@ -1,3 +1,57 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-name {
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+} /* ini buat style kotak pencariannya*/
+
+.search.btn {
     background-color: palevioletred;
+    border: none;
+    color: black;
+    font-size: 14px;
+    padding: 9px 16px;
+    border-radius: 0 4px 4px 0;
+} /* ini harusnya ngubah buat ikon kaca pembesarnya gitu, tp gatau kenapa ga bekerja */
+
+.hero {
+    background-color: blueviolet; /*ini backgroundnya buat banner webnya gitu, tapi nanti inputnya foto ya. foto makanan, apa kek bebas*/
+    font-size: 30px;
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(249, 135, 253);
 }
