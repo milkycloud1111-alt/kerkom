@@ -1,3 +1,15 @@
+
+
+
+.nav-name h2{
+    color: rgb(117, 72, 28);
+}
+
+body{
+    background:#f8f1e6;
+    color:rgb(74, 58, 42);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +18,13 @@
 }
 
 .navbar {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#f8f1e6;
+    position:sticky;
+    top:0;
 }
 
 .nav-name {
@@ -33,26 +44,109 @@
 }
 
 .search-box {
-    display: flex;
-    align-items: center;
-} /* ini buat style kotak pencariannya*/
+    background: #f8f1e6;
+    border: 2px solid #b88d61;
+    border-radius: 30px;
+    color: #6b4f3a;
+    padding: 10px 15px;
+} 
 
-.search.btn {
-    background-color: palevioletred;
+.search-box input{
+    background: transparent;
     border: none;
-    color: black;
-    font-size: 14px;
-    padding: 9px 16px;
-    border-radius: 0 4px 4px 0;
-} /* ini harusnya ngubah buat ikon kaca pembesarnya gitu, tp gatau kenapa ga bekerja */
+    outline: none;
+    color: #6b4f3a;
+    font-size: 17px;
 
-.hero {
-    background-color: blueviolet; /*ini backgroundnya buat banner webnya gitu, tapi nanti inputnya foto ya. foto makanan, apa kek bebas*/
-    font-size: 30px;
-    font-weight: bold;
 }
 
-body {
-    background-color: rgb(249, 135, 253);
+.search-btn {
+    border:none;
+    background:#b88d61;
+    color:white;
+    padding:8px 12px;
+    border-radius:50%;
+    margin-left:5px;
+    cursor:pointer;
+   
 } 
+
+.hero {
+    background-color:  #867E3Fff; /*ini backgroundnya buat banner webnya gitu, tapi nanti inputnya foto ya. foto makanan, apa kek bebas*/
+    font-size: 30px;
+    font-weight: bold;
+    align-content: center;
+    padding: 50px 80px;
+
+
+}
+
+
+
+.food-container {
+    padding: 50px 80px;
+    width:85%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:120px;
+    padding-bottom:100px;
+}
+
+.food-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+}
+
+/* Item genap dibalik */
+.food-item:nth-child(even){
+    flex-direction:row-reverse;
+}
+
+.food-item h2{
+    font-size:3rem;
+    font-family:Georgia, serif;
+    margin-bottom:15px;
+}
+
+.food-item p{
+    max-width:400px;
+    color:#3D1F06ff;
+    line-height:1.7;
+    font-size: 20px;
+}
+
+.food-item img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow:0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* bikin blobsnya gimana yeahh...-mice */
+.food-item{
+    position:relative;
+}
+
+.food-item::before{
+    content:"";
+    position:absolute;
+    width:300px;
+    height:180px;
+}
+/* buletan putih */
+
+.food-item:nth-child(odd)::before{
+    right:80px;
+} 
+/* mepet kanan */
+
+.food-item:nth-child(even)::before{
+    left:80px;
+}
+/* mepet kiri */
+
 
