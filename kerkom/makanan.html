@@ -40,7 +40,7 @@
             <p>Lorem ipsum dolor sit amet</p>
         </div> 
         <!-- eh ini taro gambar aja ato sama tulisan? -->
-         <!-- ini ntar backgroundnya foto makanan, atasnya ditimpa sama tulisan -->
+         <!-- ini buat tulisan di atas gambarnya, ubah gambarnya di css. di bagian hero ganti 'backgroundcolor' jadi buat masukkin gambarnya apa itu namanya lupa-->
 
     </section>
 
@@ -48,42 +48,56 @@
 
         <div class="food-item">
             <h2>Nasi Tutug Oncom</h2>
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
-            
+            <P>Nasi Tutug Oncom khas Tasikmalaya yang dibuat dengan perpaduan nasi hangat yang diaduk bersama oncom bakar, disajikan lengkap dengan lalapan, sambal, serta lauk pauk tambahan seperti tahu, tempe, dan ayam goreng.</P>
+            <button class="btn-detail" onclick="openModal('Nasi Tutug Oncom', 'Deskripsi lengkap Nasi Tutug Oncom')">Lihat Detail</button>
+            <!--Dalam kurung yang deskripsi lengkap itu nanti diubah terus diisi buat masukin deskripsi yang lebih detailnya tiap makanan-->
             <img src="" alt=""> 
         </div>
 
      <div class="food-item">
             <h2>Gudeg</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
+            <button class="btn-detail" onclick="openModal('Gudeg', 'Deskripsi lengkap Gudeg')">Lihat Detail</button>
             <img src="" alt=""> 
         </div>
 
          <div class="food-item">
             <h2>Rendang</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
+            <button class="btn-detail" onclick="openModal('Rendang', 'Deskripsi lengkap Rendang.')">Lihat Detail</button>
             <img src="" alt=""> 
         </div>
 
          <div class="food-item">
             <h2>Bubur Pedas</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
+            <button class="btn-detail" onclick="openModal('Bubur Pedas', 'Deskripsi lengkap Bubur Pedas.')">Lihat Detail</button>
             <img src="" alt=""> 
         </div>
 
          <div class="food-item">
             <h2>Sate Maranggi</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
+            <button class="btn-detail" onclick="openModal('Sate Maranggi', 'Deskripsi lengkap Sate Maranggi.')">Lihat Detail</button>
             <img src="" alt=""> 
         </div>
 
          <div class="food-item">
             <h2>Pempek</h2>
             <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
+            <button class="btn-detail" onclick="openModal('Pempek', 'Deskripsi lengkap Pempek Palembang.')">Lihat Detail</button>
             <img src="" alt=""> 
         </div>
 
-        
+<!--buat isi modal/pop upnya -->
+        <div id="foodModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Judul Kuliner</h2>
+            <p id="modalDesc">Deskripsi detail kuliner akan muncul di sini.</p>
+        </div>
+        </div>
+
     </div>
 
 <script src="makanan.js"></script>

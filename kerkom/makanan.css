@@ -1,6 +1,4 @@
-
-
-
+/*ini kodingan buat navbarnyaaah*/
 .nav-name h2{
     color: rgb(117, 72, 28);
 }
@@ -71,6 +69,7 @@ body{
    
 } 
 
+/*ni kodingan buat bekgrond nganu webnya, banner*/
 .hero {
     background-color:  #867E3Fff; /*ini backgroundnya buat banner webnya gitu, tapi nanti inputnya foto ya. foto makanan, apa kek bebas*/
     font-size: 30px;
@@ -81,8 +80,7 @@ body{
 
 }
 
-
-
+/*ni buat makanan makanannya*/
 .food-container {
     padding: 50px 80px;
     width:85%;
@@ -159,4 +157,99 @@ body{
 }
 /* mepet kiri */
 
+/*ni buat tombol detailnya*/
+.btn-detail {
+    background-color: #b88d61;
+    color: white;
+    border: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
 
+.btn-detail:hover {
+    background-color: rgb(117, 72, 28);
+}
+
+/* ini kodingan buat styling si popupnyaaahhhh */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 9999; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease, visibility 0.4s ease;
+} 
+
+.modal-content {
+    background-color: #f8f1e6;
+    border: 3px solid #b88d61;
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 550px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transform: translateY(100px);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.15);
+}
+
+.modal.aktif {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal.aktif .modal-content {
+    transform: translateY(0); 
+}
+
+.close-btn {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #6b4f3a;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: rgb(117, 72, 28);
+}
+
+#modalTitle {
+    font-family: Georgia, serif;
+    font-size: 2.2rem;
+    color: rgb(117, 72, 28);
+    margin-bottom: 15px;
+}
+
+#modalDesc {
+    color: #3D1F06ff;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
