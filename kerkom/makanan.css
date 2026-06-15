@@ -98,6 +98,16 @@ body{
     align-items:center;
     justify-content:space-between;
     gap:60px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s cubic-bezier(0.215, 0.610, 0.355, 1),
+                transform 1.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.food-item.muncul {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Item genap dibalik */
