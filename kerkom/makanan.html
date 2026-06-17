@@ -1,174 +1,296 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kulinerr</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="makanan.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="makanan.css" />
 
     <!-- link font taro bawah sini -->
-    
-
-
-</head>
-<body>
-
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="nav-name">
-            <h1>Kuliner Daerah Indonesia</h1>
-        </div>
+      <div class="nav-name">
+        <h1>Kuliner Daerah Indonesia</h1>
+      </div>
 
-        <ul class="nav-links">
-            <li>BERANDA</li>
-            <li>DAFTAR KULINER</li>
-            <li>GALERI</li>
-            <li>KONTAK</li>
-        </ul>
+      <ul class="nav-links">
+        <li>BERANDA</li>
+        <li>DAFTAR KULINER</li>
+        <li>GALERI</li>
+        <li>KONTAK</li>
+      </ul>
 
-        <div class="search-box">
-            <input type="text" placeholder="Cari Kuliner...">
-            <button type="submit" class="search-btn">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
+      <div class="search-box">
+        <input type="text" placeholder="Cari Kuliner..." />
+        <button type="submit" class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
     </nav>
 
     <section class="hero">
-        <div class="container">
-            <h1>nama website</h1>
-            <p>Lorem ipsum dolor sit amet</p>
-        </div> 
-        <!-- eh ini taro gambar aja ato sama tulisan? -->
-         <!-- ini buat tulisan di atas gambarnya, ubah gambarnya di css. di bagian hero ganti 'backgroundcolor' jadi buat masukkin gambarnya apa itu namanya lupa-->
-
+      <div class="container">
+        <h1>nama website</h1>
+        <p>Lorem ipsum dolor sit amet</p>
+      </div>
+      <!-- eh ini taro gambar aja ato sama tulisan? -->
+      <!-- ini buat tulisan di atas gambarnya, ubah gambarnya di css. di bagian hero ganti 'backgroundcolor' jadi buat masukkin gambarnya apa itu namanya lupa-->
     </section>
 
     <div class="food-container">
-
-        <div class="food-item">
-
-            <div class="food-title">
-                <h2>Nasi Tutug Oncom</h2>
-                <div class="lokasi">
-                <i class="fa-solid fa-location-dot"></i>
-                     <span>Tasikmalaya</span>
-                 </div>
-             </div>
-
-            <P>Nasi Tutug Oncom khas Tasikmalaya yang dibuat dengan perpaduan nasi hangat yang diaduk bersama oncom bakar, disajikan lengkap dengan lalapan, sambal, serta lauk pauk tambahan seperti tahu, tempe, dan ayam goreng.</P>
-            <button class="btn-detail" onclick="openModal('Nasi Tutug Oncom', 'Deskripsi lengkap Nasi Tutug Oncom')">Lihat Detail</button>
-            <!--Dalam kurung yang deskripsi lengkap itu nanti diubah terus diisi buat masukin deskripsi yang lebih detailnya tiap makanan-->
-            <img src="Makanan 1.png" alt=""> 
+      <div class="food-item">
+        <div class="food-title">
+          <h2>Nasi Tutug Oncom</h2>
+          <div class="lokasi">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Tasikmalaya - Jawa Barat</span>
+          </div>
         </div>
 
-     <div class="food-item">
-        
-            <div class="food-title">
-                <h2>Gudeg</h2>
-                <div class="lokasi">
-                <i class="fa-solid fa-location-dot"></i>
-                     <span>Yogyakarta</span>
-                 </div>
-             </div>
+        <p>
+          Nasi Tutug Oncom makanan tradisional khas Tasikmalaya yang biasa juga
+          disebut Nasi TO. Nama “tutug” berasal dari bahasa Sunda yang berarti
+          diaduk, karena proses buatnya dengan nasi yang dicampur sambal oncom.
+          Makanan ini biasanya disajikan bersama lauk seperti ayam goreng, tahu,
+          tempe, sambal, dan lalapan. Bisa disajikan langsung maupun dibungkus
+          daun pisang.
+        </p>
+        <button
+          class="btn-detail"
+          onclick="
+            openModal(
+              'Nasi Tutug Oncom',
+              'Nasi khas Sunda dengan campuran oncom yang menghasilkan cita rasa gurih, harum, dan khas. <br><br>' +
+                '<b>Komposisi:</b><br>' +
+                '- Nasi putih<br>' +
+                '- Oncom<br>' +
+                '- Bawang merah & bawang putih<br>' +
+                '- Kencur, Cabai, Daun kemangi<br>' +
+                '- Garam dan bumbu rempah<br>' +
+                '- Lauk pendamping (ayam, tahu, tempe, lalapan)',
+            )
+          "
+        >
+          Lihat Detail
+        </button>
+        <!--Dalam kurung yang deskripsi lengkap itu nanti diubah terus diisi buat masukin deskripsi yang lebih detailnya tiap makanan-->
+        <img src="Makanan 1.png" alt="" />
+      </div>
 
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
-            <button class="btn-detail" onclick="openModal('Gudeg', 'Deskripsi lengkap Gudeg')">Lihat Detail</button>
-            <img src="" alt=""> 
+      <div class="food-item">
+        <div class="food-title">
+          <h2>Gudeg</h2>
+          <div class="lokasi">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Yogyakarta - DIY</span>
+          </div>
         </div>
 
+        <p>
+          Gudeg merupakan makanan tradisional dari Yogyakarta yang terbuat dari
+          nangka muda yang dimasak bersama santan, gula aren, dan berbagai
+          rempah selama berjam-jam. Proses memasak yang lama membuat teksturnya
+          lembut dan warnanya menjadi cokelat khas. Warna coklat dari gudeg
+          biasanya dihasilkan oleh daun jati yang dimasak secara bersamaan.
+        </p>
+        <button
+          class="btn-detail"
+          onclick="
+            openModal(
+              'Gudeg',
+              'Kuliner yang terkenal di Jogja berupa nangka muda yang dimasak lama dengan santan dan rempah hingga bercita rasa dominan manis gurih.<br> Gudeg biasanya disajikan dengan nasi, ayam kampung, telur pindang, tahu, tempe, serta sambal krecek. Makanan ini menjadi salah satu identitas kuliner Yogyakarta dan sering dijadikan oleh-oleh khas daerah tersebut. <br><br>' +
+                '<b>Komposisi:</b><br>' +
+                '- Nangka muda<br>' +
+                '- Santan<br>' +
+                '- Gula Aren<br>' +
+                '- Bawang merah & bawang putih<br>' +
+                '- Ketumbar, Lengkuas, Daun salam<br>' +
+                '- Ayam kampung<br>' +
+                '- Telur pindang<br>' +
+                '- Garam dan bumbu rempah<br>' +
+                '- Sambal kerecek',
+            )
+          "
+        >
+          Lihat Detail
+        </button>
+        <img src="" alt="" />
+      </div>
 
-
-         <div class="food-item">
-
-            <div class="food-title">
-                <h2>Rendang</h2>
-                <div class="lokasi">
-                <i class="fa-solid fa-location-dot"></i>
-                     <span>Padang</span>
-                 </div>
-             </div>
-
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
-            <button class="btn-detail" onclick="openModal('Rendang', 'Deskripsi lengkap Rendang.')">Lihat Detail</button>
-            <img src="" alt=""> 
+      <div class="food-item">
+        <div class="food-title">
+          <h2>Rendang</h2>
+          <div class="lokasi">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Padang - Sumatra Barat</span>
+          </div>
         </div>
 
+        <p>
+          Rendang merupakan makanan khas masyarakat Minangkabau dari Sumatra
+          Barat. Hidangan ini terlahir akibat perilaku sedari lampau suku
+          Minangkabau yang gemar merantau ke sana kemari sehingga butuh banyak
+          perbekalan, terutama hidangan yang awet, tahan lama, dan bercita rasa
+          sesuai lidah asli orang Minang. Awal mula olahan rendang menggunakan
+          daging rusa. Namun, karena rusa mulai sulit didapat, bahan dasarnya
+          beralih menjadi daging sapi atau kerbau.
+        </p>
+        <button
+          class="btn-detail"
+          onclick="
+            openModal(
+              'Rendang',
+              'Rendang terkenal sebagai salah satu makanan Indonesia yang mendunia hidangan ini dibuat dari daging yang dimasak perlahan (biasanya 4 jam) bersama santan dan campuran rempah. Proses memasak yang lama membuat bumbu meresap sempurna sehingga menyisakan potongan daging dengan tekstur yang empuk serta bumbu kehitaman yang mengering karena itu rendang dapat tahan berminggu-minggu di suhu ruang. <br>Olahan daging dengan bumbu rempah khas Minangkabau yang dimasak dengan suhu rendah dalam waktu yang lama hingga kering dan kaya rasa.<br><br>' +
+                '<b>Komposisi:</b><br>' +
+                '- Daging sapi<br>' +
+                '- Santan kelapa<br>' +
+                '- Cabai merah<br>' +
+                '- Bawang merah & bawang putih<br>' +
+                '- Jahe, Lengkuas, Serai<br>' +
+                '- Daun kunyit & daun jeruk<br>' +
+                '- Rempah khas Minangkabau',
+            )
+          "
+        >
+          Lihat Detail
+        </button>
+        <img src="" alt="" />
+      </div>
 
-
-         <div class="food-item">
-
-            <div class="food-title">
-                <h2>Bubur Pedas</h2>
-                <div class="lokasi">
-                <i class="fa-solid fa-location-dot"></i>
-                     <span>Pontianak</span>
-                 </div>
-             </div>
-
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
-            <button class="btn-detail" onclick="openModal('Bubur Pedas', 'Deskripsi lengkap Bubur Pedas.')">Lihat Detail</button>
-            <img src="" alt=""> 
+      <div class="food-item">
+        <div class="food-title">
+          <h2>Bubur Pedas</h2>
+          <div class="lokasi">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Pontianak - Kalimantan Barat</span>
+          </div>
         </div>
 
+        <p>
+          Bubur Pedas merupakan makanan tradisional khas Pontianak, Kalimantan
+          Barat. Walaupun namanya “pedas”, rasa pedas pada makanan ini tidak
+          selalu berasal dari cabai, tetapi dari penggunaan rempah dan bahan
+          khas seperti daun kesum. Bubur ini dibuat dari beras yang dimasak
+          bersama berbagai sayuran seperti pakis, kangkung, dan kacang-kacangan.
+          Makanan ini sering disajikan sebagai hidangan hangat dan memiliki
+          nilai budaya bagi masyarakat Melayu Sambas.
+        </p>
+        <button
+          class="btn-detail"
+          onclick="
+            openModal(
+              'Bubur Pedas',
+              'Bubur khas Pontianak yang dibuat dari beras dan campuran sayuran serta rempah dengan rasa gurih.<br><br>' +
+                '<b>Komposisi:</b><br>' +
+                '- Beras<br>' +
+                '- Daun kesum<br>' +
+                '- Pakis<br>' +
+                '- kangkung<br>' +
+                '- Kacang panjang<br>' +
+                '- Tauge<br>' +
+                '- Jagung<br>' +
+                '- Kelapa sangrai<br>' +
+                '- Rempah-rempah<br>' +
+                '- Bumbu halus',
+            )
+          "
+        >
+          Lihat Detail
+        </button>
+        <img src="" alt="" />
+      </div>
 
-
-         <div class="food-item">
-
-            <div class="food-title">
-                <h2>Sate Maranggi</h2>
-                <div class="lokasi">
-                <i class="fa-solid fa-location-dot"></i>
-                     <span>dri mana</span>
-                 </div>
-             </div>
-
-
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
-            <button class="btn-detail" onclick="openModal('Sate Maranggi', 'Deskripsi lengkap Sate Maranggi.')">Lihat Detail</button>
-            <img src="" alt=""> 
+      <div class="food-item">
+        <div class="food-title">
+          <h2>Sate Maranggi</h2>
+          <div class="lokasi">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Purwakarta - Jawa Barat</span>
+          </div>
         </div>
 
+        <p>
+          Sate Maranggi merupakan kuliner khas Purwakarta, Jawa Barat yang
+          terkenal dengan rasa gurih dan aroma rempahnya. Berbeda dengan sate
+          pada umumnya, daging sate maranggi sudah diberi bumbu sebelum dibakar
+          sehingga menghasilkan rasa yang lebih kuat. Biasanya sate maranggi
+          menggunakan daging sapi atau kambing dan disajikan bersama sambal
+          tomat, kecap, serta nasi atau ketan bakar.
+        </p>
+        <button
+          class="btn-detail"
+          onclick="
+            openModal(
+              'Sate Maranggi',
+              'Sate khas Jawa Barat dengan daging yang dimarinasi bumbu rempah sebelum dibakar.<br><br>' +
+                '<b>Komposisi:</b><br>' +
+                '- Daging sapi/kambing<br>' +
+                '- Bawang Putih<br>' +
+                '- Ketumbar<br>' +
+                '- Gula merah<br>' +
+                '- Kecap manis<br>' +
+                '- Asam jawa<br>' +
+                '- Sambal tomat<br>' +
+                '- Bumbu Pelangkap',
+            )
+          "
+        >
+          Lihat Detail
+        </button>
+        <img src="" alt="" />
+      </div>
 
-
-         <div class="food-item">
-
-            <div class="food-title">
-                <h2>Pempek</h2>
-                <div class="lokasi">
-                <i class="fa-solid fa-location-dot"></i>
-                     <span>Palembang</span>
-                 </div>
-             </div>
-
-            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi suscipit itaque, harum quisquam vel pariatur quibusdam velit reprehenderit repellendus error magni sit ex dolorum voluptatibus veritatis earum dolore natus.</P>
-            <button class="btn-detail" onclick="openModal('Pempek', 'Deskripsi lengkap Pempek Palembang.')">Lihat Detail</button>
-            <img src="" alt=""> 
+      <div class="food-item">
+        <div class="food-title">
+          <h2>Pempek</h2>
+          <div class="lokasi">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Palembang</span>
+          </div>
         </div>
 
-<!--buat isi modal/pop upnya -->
-        <div id="foodModal" class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, sequi
+          suscipit itaque, harum quisquam vel pariatur quibusdam velit
+          reprehenderit repellendus error magni sit ex dolorum voluptatibus
+          veritatis earum dolore natus.
+        </p>
+        <button
+          class="btn-detail"
+          onclick="openModal('Pempek', 'Deskripsi lengkap Pempek Palembang.')"
+        >
+          Lihat Detail
+        </button>
+        <img src="" alt="" />
+      </div>
+
+      <!--buat isi modal/pop upnya -->
+      <div id="foodModal" class="modal">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeModal()">&times;</span>
-            <h2 id="modalTitle">Judul Kuliner</h2>
-            <p id="modalDesc">Deskripsi detail kuliner akan muncul di sini.</p>
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2 id="modalTitle">Judul Kuliner</h2>
+          <p id="modalDesc">Deskripsi detail kuliner akan muncul di sini.</p>
         </div>
-        </div>
-
+      </div>
     </div>
 
-<footer class="footer">
-    <!-- Blob atas -->
-    <div class="footer-blob">
+    <footer class="footer">
+      <!-- Blob atas -->
+      <div class="footer-blob">
         <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path fill="#8f8b4c"
-                d="M0,160L60,149.3C120,139,240,117,360,122.7C480,128,600,160,720,160C840,160,960,128,1080,122.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L0,320Z">
-            </path>
+          <path
+            fill="#8f8b4c"
+            d="M0,160L60,149.3C120,139,240,117,360,122.7C480,128,600,160,720,160C840,160,960,128,1080,122.7C1200,117,1320,139,1380,149.3L1440,160L1440,320L0,320Z"
+          ></path>
         </svg>
-    </div>
-</footer>
+      </div>
+    </footer>
 
-
-<script src="makanan.js"></script>
-</body>
+    <script src="makanan.js"></script>
+  </body>
 </html>
