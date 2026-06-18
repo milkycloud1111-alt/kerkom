@@ -291,3 +291,14 @@ body {
     transform: scale(1);
   }
 }
+
+/* Gaya jika menggunakan link Google Maps */
+.lokasi-link {
+  color: rgb(71, 49, 36);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.lokasi-link:hover {
+  text-decoration: underline; /* Efek garis bawah saat kursor menempel */
+}
