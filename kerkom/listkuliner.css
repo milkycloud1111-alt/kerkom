@@ -1,0 +1,104 @@
+/*ini kodingan buat navbarnyaaah*/
+.nav-name h1 {
+  color: rgb(74, 58, 42);
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+body {
+  background: #f8f1e6;
+  color: rgb(74, 58, 42);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Poppins", "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #f8f1e6;
+  position: sticky;
+  top: 0;
+}
+
+.nav-name {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(74, 58, 42); 
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: rgb(117, 72, 28);
+}
+
+.search-box {
+  background: #f8f1e6;
+  border: 2px solid #b88d61;
+  border-radius: 30px;
+  color: #6b4f3a;
+  padding: 10px 15px;
+}
+
+.search-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #6b4f3a;
+  font-size: 17px;
+}
+
+.search-btn {
+  border: none;
+  background: #b88d61;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.daftar {
+    text-align: center;
+    padding: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+.daftar h2 {
+  animation: slideUp 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);  
+  }
+}
