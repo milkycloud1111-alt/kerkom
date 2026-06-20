@@ -1,4 +1,3 @@
-/*ini kodingan buat navbarnyaaah*/
 .nav-name h1 {
   color: rgb(74, 58, 42);
   font-family: Georgia, serif;
@@ -80,101 +79,53 @@ body {
   cursor: pointer;
 }
 
-.daftar {
-    text-align: center;
-    padding: 40px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-style: italic;
+.kuliner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px; 
+  padding: 40px 10%;
+  background-color: #fcf8f2;
 }
 
-.daftar h2 {
-  animation: slideUp 1.2s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
+.food-card {
+  background-color: #fcf8f2;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 20px;
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
 }
 
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(60px); 
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);  
+    transform: translateY(0);
   }
 }
 
-.food-container {
-  max-width: 950px; 
-  margin: 40px auto;
-  padding: 0 20px;
-}
-
-.food-item {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;     
-  padding: 25px 0;
-  border-bottom: 2px solid #dab888; 
+.food-image img {
   width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.food-title {
-  flex: 1;
-  display: flex;
-  flex-direction: column;  
-  align-items: flex-start; 
-  padding-right: 50px;   
+.food-name {
+  margin: 15px 0 5px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
 }
 
-
-.food-title h2 {
-  font-size: 1.75rem;
-  color: #4a3728; 
-  margin: 0 0 6px 0;
-}
-
-.lokasi {
-  font-size: 0.95rem;
-  color: #8c7662; 
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 14px;
-}
-
-.deskripsi {
-  font-size: 1rem;
-  color: #555555;
-  line-height: 1.6;
+.food-origin {
   margin: 0;
-}
-
-.food-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover; 
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06); 
-  flex-shrink: 0;
-  background-color: #eaeaea;
-}
-
-.food-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px 0;
-  border-bottom: 2px solid #bd9b7d;
-  width: 100%;
-  
-
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-.food-item.appear {
-  opacity: 1;
-  transform: translateY(0);
+  font-size: 0.9rem;
+  color: #777;
 }
 
 .footer-blob {
