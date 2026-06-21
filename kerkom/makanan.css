@@ -1,7 +1,8 @@
 /*ini kodingan buat navbarnyaaah*/
+
 .nav-name h1 {
   color: rgb(74, 58, 42);
-  font-family: Georgia, serif;
+  font-family: 'Cream Cake Bold', sans-serif;
   font-size: 25px;
 }
 
@@ -32,6 +33,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   letter-spacing: -0.5px;
+  font-family: 'Cream Cake Bold', sans-serif;
 }
 
 .nav-links {
@@ -80,18 +82,59 @@ body {
   cursor: pointer;
 }
 
+
 /*ni kodingan buat bekgrond nganu webnya, banner*/
-.hero {
-  background-color: #867e3fff; /*ini backgroundnya buat banner webnya gitu, tapi nanti inputnya foto ya. foto makanan, apa kek bebas*/
-  font-size: 30px;
-  font-weight: bold;
-  align-content: center;
-  padding: 50px 80px;
+@font-face {
+    font-family: 'GoldenHillsDEMO';
+    src: url('font/GoldenHillsDEMO.ttf') format('truetype');
+}
+
+
+.container h1 {
+  color:#f8f1e6;
+  font-family: 'GoldenHillsDEMO', Serif;
+  font-size: 100px;
+   text-shadow: 4px 4px 8px rgba(0,0,0,0.6);
 }
 
 .hero p{
+  color:#f8f1e6;
   font-style: italic;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
 }
+
+.hero {
+  
+  position: relative;
+  overflow: hidden;
+
+  min-height: 500px;
+  font-size: 30px;
+  font-weight: bold;
+  align-content: center;
+  padding: 50px 150px;
+
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,0.45),
+      rgba(0,0,0,0.45)
+    ),
+    url('peta.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  z-index: -1;
+}
+
 
 .beranda {
     text-align: center;
@@ -139,6 +182,10 @@ body {
 .food-title {
   display: flex;
   flex-direction: column;
+}
+
+.food-title h2 {
+  font-family: 'GoldenHillsDEMO', Serif;
 }
 
 .lokasi {
